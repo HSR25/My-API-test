@@ -111,4 +111,34 @@ test.describe.serial('Category CRUD Operations', () => {
         expect(getBody.data).toBeNull();
         expect(getBody.errors).toBeDefined();
     });
+
+    test('Should return error when trying to update deleted category', async ({ apiClient }) => {
+        const categoryService = new CategoryService(apiClient);
+        const updateResponse = await categoryService.sendRequest(
+            updateCategoryMutation, {
+            id: createdCategoryId,  
+            name: categoryUpdateData.name,
+            image: categoryUpdateData.image
+        } 
+        );
+        console.log('Update Deleted Category Response Status:', updateResponse.status());
+        console.log('Update Deleted Category Response Body:', await updateResponse.json());
+        expect(updateResponse.status()).toBe(200);
+        const updateBody = await updateResponse.json();
+        expect(updateBody.data.updateCategory).toBeNull();
+        expect(updateBody.errors).toBeDefined();
+    });
+
+    test('Should return error when trying to delete already deleted category', async ({ apiClient }) => {   
+        const categoryService = new CategoryService(apiClient);
+        const deleteResponse = await categoryService.sendRequest(
+            deleteCategoryMutation, { id: createdCategoryId }
+        );
+        console.log('Delete Already Deleted Category Response Status:', deleteResponse.status());
+        console.log('Delete Already Deleted Category Response Body:', await deleteResponse.json());
+        expect(deleteResponse.status()).toBe(200);
+        const deleteBody = await deleteResponse.json();
+        expect(deleteBody.data.deleteCategory).toBe(false);
+        expect(deleteBody.errors).toBeDefined();
+    });
 });
