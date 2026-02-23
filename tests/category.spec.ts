@@ -141,4 +141,18 @@ test.describe.serial('Category CRUD Operations', () => {
         expect(deleteBody.data.deleteCategory).toBe(false);
         expect(deleteBody.errors).toBeDefined();
     });
+
+    test('Should return error when trying to create category with missing fields', async ({ apiClient }) => {       
+        const categoryService = new CategoryService(apiClient); 
+        const createResponse = await categoryService.sendRequest(
+            addCategoryMutation, { name: categoryCreateData.name } // Missing image field
+        );
+        console.log('Create Category with Missing Fields Response Status:', createResponse.status());   
+        console.log('Create Category with Missing Fields Response Body:', await createResponse.json());
+        expect(createResponse.status()).toBe(200);
+        const createBody = await createResponse.json();
+        expect(createBody.data.addCategory).toBeNull();
+        expect(createBody.errors).toBeDefined();
+    });
+        
 });
