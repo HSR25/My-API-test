@@ -1,0 +1,10 @@
+Delete Category Response Status: 200
+Delete Category Response Body: {
+  errors: [
+    {
+      message: 'Variable "$id" of required type "ID!" was not provided.',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}

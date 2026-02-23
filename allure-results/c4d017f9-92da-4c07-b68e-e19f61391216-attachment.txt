@@ -1,0 +1,11 @@
+Profile Response Status: 200
+Profile Response Body: {
+  id: 206,
+  email: 'user_9866cd07@gmail.com',
+  password: 'TNF8Ty',
+  name: 'User_df41bcfb-9b01-4daa-ad10-3ba378539082',
+  role: 'admin',
+  avatar: 'https://demo.test/security/help?ref=725b5524&page=6',
+  creationAt: '2026-02-16T18:41:10.000Z',
+  updatedAt: '2026-02-16T18:41:10.000Z'
+}

@@ -1,0 +1,11 @@
+Create Category Response Status: 200
+Create Category Response Body: {
+  data: {
+    addCategory: {
+      id: '1780',
+      name: 'Just for automation testi3ed22',
+      image: 'https://placeimg.com/640/480/any'
+    }
+  }
+}
+Created Category ID: 1780

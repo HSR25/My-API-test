@@ -1,0 +1,10 @@
+Update Category Response Status: 200
+Update Category Response Body: {
+  data: {
+    updateCategory: {
+      id: '220',
+      name: 'Updated Category Name',
+      image: 'https://placeimg.com/640/480/any'
+    }
+  }
+}

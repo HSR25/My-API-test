@@ -1,0 +1,9 @@
+[    1599ms] [WARNING] Warning: Component with name Placeholderis not available. Returning a fallback View @ https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/99184d4bda2fc8e06575cfc9a2697032/CrossCommon.js:0
+[    1623ms] [WARNING] Warning: Component with name RNShimmeringViewis not available. Returning a fallback View @ https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/99184d4bda2fc8e06575cfc9a2697032/CrossCommon.js:0
+[    1636ms] [WARNING] Warning: Component with name GifViewis not available. Returning a fallback View @ https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/99184d4bda2fc8e06575cfc9a2697032/CrossCommon.js:0
+[    1636ms] [WARNING] Warning: Component with name LiveVideoViewis not available. Returning a fallback View @ https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/99184d4bda2fc8e06575cfc9a2697032/CrossCommon.js:0
+[    1637ms] [WARNING] Warning: Component with name HybridConditionTrackerViewis not available. Returning a fallback View @ https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/99184d4bda2fc8e06575cfc9a2697032/CrossCommon.js:0
+[    1653ms] [ERROR] Access to fetch at 'https://static-assets-web.flixcart.com/www/linchpin/batman-returns/codes.json' from origin 'https://www.flipkart.com' has been blocked by CORS policy: Request header field x-user-agent is not allowed by Access-Control-Allow-Headers in preflight response. @ https://www.flipkart.com/:0
+[    1654ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://static-assets-web.flixcart.com/www/linchpin/batman-returns/codes.json:0
+[    1655ms] [ERROR] Failed to load resource: the server responded with a status of 406 () @ https://sonic.fdp.api.flipkart.com/4/data/collector/business:0
+[    1656ms] [ERROR] Failed to load resource: the server responded with a status of 406 () @ https://sonic.fdp.api.flipkart.com/4/data/collector/business:0

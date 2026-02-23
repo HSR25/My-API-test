@@ -1,0 +1,183 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/account/login%3Fret%3D%252Faccount%252F%253Frd%253D0%2526link%253Dhome_account
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e50]:
+    - generic [ref=e51] [cursor=pointer]:
+      - text: Electronics
+      - img [ref=e52]
+    - generic [ref=e54] [cursor=pointer]:
+      - text: TVs & Appliances
+      - img [ref=e55]
+    - generic [ref=e57] [cursor=pointer]:
+      - text: Men
+      - img [ref=e58]
+    - generic [ref=e60] [cursor=pointer]:
+      - text: Women
+      - img [ref=e61]
+    - generic [ref=e63] [cursor=pointer]:
+      - text: Baby & Kids
+      - img [ref=e64]
+    - generic [ref=e66] [cursor=pointer]:
+      - text: Home & Furniture
+      - img [ref=e67]
+    - generic [ref=e69] [cursor=pointer]:
+      - text: Sports, Books & More
+      - img [ref=e70]
+    - link "Flights" [ref=e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e75]:
+    - generic [ref=e76]:
+      - generic [ref=e77]: Login
+      - paragraph [ref=e78]: Get access to your Orders, Wishlist and Recommendations
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - textbox [active] [ref=e83]
+        - generic: Enter Email/Mobile number
+      - generic [ref=e84]:
+        - text: By continuing, you agree to Flipkart's
+        - link "Terms of Use" [ref=e85] [cursor=pointer]:
+          - /url: /pages/terms
+        - text: and
+        - link "Privacy Policy" [ref=e86] [cursor=pointer]:
+          - /url: /pages/privacypolicy
+        - text: .
+      - button "Request OTP" [ref=e88] [cursor=pointer]
+      - link "New to Flipkart? Create an account" [ref=e90] [cursor=pointer]:
+        - /url: /account/login?signup=true
+  - contentinfo [ref=e91]:
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]: ABOUT
+          - link "Contact Us" [ref=e97] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e98] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e99] [cursor=pointer]:
+            - /url: https://flipkart.turbohire.co/careerpage/4d757ba0-3d57-448a-b82c-238ed87ac90f
+          - link "Flipkart Stories" [ref=e100] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e101] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e102] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e103]:
+          - generic [ref=e104]: GROUP COMPANIES
+          - link "Myntra" [ref=e105] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e106] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e107] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e108]:
+          - generic [ref=e109]: HELP
+          - link "Payments" [ref=e110] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e111] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e112] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e113] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e114]:
+          - generic [ref=e115]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e116] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e117] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e118] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e119] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e120] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e121] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e122] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e123] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e125]:
+          - generic [ref=e126]: "Mail Us:"
+          - generic [ref=e129]:
+            - paragraph [ref=e130]: Flipkart Internet Private Limited,
+            - paragraph [ref=e131]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e132]: Clove Embassy Tech Village,
+            - paragraph [ref=e133]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e134]: Bengaluru, 560103,
+            - paragraph [ref=e135]: Karnataka, India
+          - generic [ref=e136]: Social
+          - generic [ref=e137]:
+            - link [ref=e139] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e140]
+            - link [ref=e142] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e143]
+            - link [ref=e145] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e146]
+            - link [ref=e148] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e149]
+        - generic [ref=e151]:
+          - generic [ref=e152]: "Registered Office Address:"
+          - generic [ref=e155]:
+            - paragraph [ref=e156]: Flipkart Internet Private Limited,
+            - paragraph [ref=e157]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e158]: Clove Embassy Tech Village,
+            - paragraph [ref=e159]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e160]: Bengaluru, 560103,
+            - paragraph [ref=e161]: Karnataka, India
+            - paragraph [ref=e162]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e163]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e164] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e165] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - img [ref=e169]
+          - link "Become a Seller" [ref=e170] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e171]:
+          - img [ref=e172]
+          - link "Advertise" [ref=e173] [cursor=pointer]:
+            - /url: https://brands.flipkart.com
+        - generic [ref=e174]:
+          - img [ref=e175]
+          - link "Gift Cards" [ref=e176] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e177]:
+          - img [ref=e178]
+          - link "Help Center" [ref=e179] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e180]: © 2007-2026 Flipkart.com
+        - img [ref=e181]

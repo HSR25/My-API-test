@@ -1,0 +1,14 @@
+{
+  "name": "api-playwright",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "ajv": "^8.17.1",
+    "allure-playwright": "^3.4.5",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+[
+  {
+    instancePath: '/data',
+    schemaPath: '#/properties/data/required',
+    keyword: 'required',
+    params: { missingProperty: 'category' },
+    message: "must have required property 'category'"
+  }
+]

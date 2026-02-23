@@ -1,0 +1,11 @@
+Retrieving Category with ID: undefined
+Get Category Response Status: 200
+Get Category Response Body: {
+  errors: [
+    {
+      message: 'Variable "$id" of required type "ID!" was not provided.',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}

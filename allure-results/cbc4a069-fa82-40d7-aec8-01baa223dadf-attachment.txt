@@ -1,0 +1,10 @@
+Update Category Response Status: 400
+Update Category Response Body: {
+  errors: [
+    {
+      message: 'Field "nam" is not defined by type "UpdateCategoryDto". Did you mean "name"?',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}
