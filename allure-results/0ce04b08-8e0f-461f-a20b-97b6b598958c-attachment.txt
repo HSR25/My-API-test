@@ -1,0 +1,58 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '97',
+      title: 'Handmade Cotton Cheese 2D2hOD',
+      price: 930,
+      description: 'Savor the sweet essence in our Bike, designed for reflecting culinary adventures'
+    }
+  }
+}
+Created Product ID: 97
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '97',
+      title: 'Handmade Cotton Cheese 2D2hOD',
+      price: 930,
+      description: 'Savor the sweet essence in our Bike, designed for reflecting culinary adventures'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '97',
+      title: 'Updated Fresh Plastic Chicken 3O2IZz',
+      price: 773
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '97',
+      title: 'Updated Fresh Plastic Chicken 3O2IZz',
+      price: 773,
+      description: 'Savor the sweet essence in our Bike, designed for reflecting culinary adventures'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

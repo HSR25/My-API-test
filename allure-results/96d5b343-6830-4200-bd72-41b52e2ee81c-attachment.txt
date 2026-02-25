@@ -1,0 +1,23 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '96',
+      title: 'Electronic Cotton Salad S2OksB',
+      price: 410.59,
+      description: 'The Programmable stable matrix Chair offers reliable performance and scratchy design'
+    }
+  }
+}
+Created Product ID: 96
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '96',
+      title: 'Electronic Cotton Salad S2OksB',
+      price: 410,
+      description: 'The Programmable stable matrix Chair offers reliable performance and scratchy design'
+    }
+  }
+}

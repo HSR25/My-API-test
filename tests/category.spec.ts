@@ -155,4 +155,17 @@ test.describe.serial('Category CRUD Operations', () => {
         expect(createBody.errors).toBeDefined();
     });
         
+    test('Should return error when trying to create category with invalid data types', async ({ apiClient }) => {   
+        const categoryService = new CategoryService(apiClient);
+
+        const createResponse = await categoryService.sendRequest(   
+            addCategoryMutation, { name: 12345, image: 'not-a-url' } // Invalid data types  
+        );
+        console.log('Create Category with Invalid Data Types Response Status:', createResponse.status());
+        console.log('Create Category with Invalid Data Types Response Body:', await createResponse.json());
+        expect(createResponse.status()).toBe(200);
+        const createBody = await createResponse.json();
+        expect(createBody.data.addCategory).toBeNull();
+        expect(createBody.errors).toBeDefined();
+    }); 
 });

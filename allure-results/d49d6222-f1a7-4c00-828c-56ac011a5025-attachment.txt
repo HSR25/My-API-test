@@ -1,0 +1,58 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '100',
+      title: 'Fantastic Silk Fish B1zSzk',
+      price: 163,
+      description: 'Our rabbit-friendly Car ensures outrageous comfort for your pets'
+    }
+  }
+}
+Created Product ID: 100
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '100',
+      title: 'Fantastic Silk Fish B1zSzk',
+      price: 163,
+      description: 'Our rabbit-friendly Car ensures outrageous comfort for your pets'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '100',
+      title: 'Updated Recycled Ceramic Computer rwZWYc',
+      price: 492
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '100',
+      title: 'Updated Recycled Ceramic Computer rwZWYc',
+      price: 492,
+      description: 'Our rabbit-friendly Car ensures outrageous comfort for your pets'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}
