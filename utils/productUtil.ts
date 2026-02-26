@@ -10,43 +10,66 @@ export class ProductFlow {
         private updateData: generateData.UpdateProductData
     ) {}
 
+    private assertNoErrors(body: any): void {
+        expect(body.errors).toBeUndefined();
+    }
+
+    private assertErrorExists(body: any, message: string): void {
+        expect(body.errors).toBeDefined();
+        expect(body.errors[0].message).toContain(message);
+    }
+
+    private assertFields(actual: any, expected: any, fields: string[]): void {
+        fields.forEach(field => {
+            expect(actual[field]).toBe(expected[field]);
+        });
+    }
+
+    private async executeAndLog(
+        productService: ProductService,
+        query: string,
+        variables: any,
+        operationName: string
+    ) {
+        const response = await productService.sendRequest(query, variables);
+        const body = await response.json();
+        console.log(`${operationName} Response Status:`, response.status());
+        console.log(`${operationName} Response Body:`, body);
+        return { response, body };
+    }
+
     validateCreate(status: number, body: any): void {
         expect(status).toBe(200);
-        expect(body.errors).toBeUndefined();
-        expect(body.data.addProduct.title).toBe(this.productData.title);
-        expect(body.data.addProduct.price).toBe(this.productData.price);
+        this.assertNoErrors(body);
+        this.assertFields(body.data.addProduct, this.productData, ['title', 'price']);
         this.createdProductId = body.data.addProduct.id;
     }
 
     validateGet(body: any): void {
-        expect(body.errors).toBeUndefined();
+        this.assertNoErrors(body);
         expect(body.data.product.id).toBe(this.createdProductId);
-        expect(body.data.product.title).toBe(this.productData.title);
-        expect(body.data.product.price).toBe(this.productData.price);
+        this.assertFields(body.data.product, this.productData, ['title', 'price']);
     }
 
     validateUpdate(body: any): void {
-        expect(body.errors).toBeUndefined();
+        this.assertNoErrors(body);
         expect(body.data.updateProduct.id).toBe(this.createdProductId);
-        expect(body.data.updateProduct.title).toBe(this.updateData.title);
-        expect(body.data.updateProduct.price).toBe(this.updateData.price);
+        this.assertFields(body.data.updateProduct, this.updateData, ['title', 'price']);
     }
 
     validateGetUpdated(body: any): void {
-        expect(body.errors).toBeUndefined();
+        this.assertNoErrors(body);
         expect(body.data.product.id).toBe(this.createdProductId);
-        expect(body.data.product.title).toBe(this.updateData.title);
-        expect(body.data.product.price).toBe(this.updateData.price);
+        this.assertFields(body.data.product, this.updateData, ['title', 'price']);
     }
 
     validateDelete(body: any): void {
-        expect(body.errors).toBeUndefined();
+        this.assertNoErrors(body);
         expect(body.data.deleteProduct).toBe(true);
     }
 
     validateGetDeleted(body: any): void {
-        expect(body.errors).toBeDefined();
-        expect(body.errors[0].message).toContain("Cannot destructure property 'url' of 'request' as it is undefined.");
+        this.assertErrorExists(body, "Cannot destructure property 'url' of 'request' as it is undefined.");
     }
 
     getCreatedProductId(): string {
@@ -54,53 +77,38 @@ export class ProductFlow {
     }
 
     async executeCreate(productService: ProductService, mutation: string, variables: any): Promise<string> {
-        const response = await productService.sendRequest(mutation, variables);
-        const body = await response.json();
-        console.log('Create Product Response Status:', response.status());
-        console.log('Create Product Response Body:', body);
+        const { response, body } = await this.executeAndLog(productService, mutation, variables, 'Create Product');
         this.validateCreate(response.status(), body);
         return this.createdProductId;
     }
 
     async executeGet(productService: ProductService, query: string): Promise<void> {
-        const response = await productService.sendRequest(query, { id: this.createdProductId });
-        const body = await response.json();
-        console.log('Get Product Response Status:', response.status());
-        console.log('Get Product Response Body:', body);
+        const { body } = await this.executeAndLog(productService, query, { id: this.createdProductId }, 'Get Product');
         this.validateGet(body);
     }
 
     async executeUpdate(productService: ProductService, mutation: string, variables: any): Promise<void> {
-        const response = await productService.sendRequest(mutation, {
-            id: this.createdProductId,
-            ...variables
-        });
-        const body = await response.json();
-        console.log('Update Product Response Status:', response.status());
-        console.log('Update Product Response Body:', body);
+        const { body } = await this.executeAndLog(
+            productService,
+            mutation,
+            { id: this.createdProductId, ...variables },
+            'Update Product'
+        );
         this.validateUpdate(body);
     }
 
     async executeGetUpdated(productService: ProductService, query: string): Promise<void> {
-        const response = await productService.sendRequest(query, { id: this.createdProductId });
-        const body = await response.json();
-        console.log('Get Updated Product Response Status:', response.status());
-        console.log('Get Updated Product Response Body:', body);
+        const { body } = await this.executeAndLog(productService, query, { id: this.createdProductId }, 'Get Updated Product');
         this.validateGetUpdated(body);
     }
 
     async executeDelete(productService: ProductService, mutation: string): Promise<void> {
-        const response = await productService.sendRequest(mutation, { id: this.createdProductId });
-        const body = await response.json();
-        console.log('Delete Product Response Status:', response.status());
-        console.log('Delete Product Response Body:', body);
+        const { body } = await this.executeAndLog(productService, mutation, { id: this.createdProductId }, 'Delete Product');
         this.validateDelete(body);
     }
 
     async executeGetDeleted(productService: ProductService, query: string): Promise<void> {
-        const response = await productService.sendRequest(query, { id: this.createdProductId });
-        const body = await response.json();
-        console.log('Get Deleted Product Response Status:', response.status());
-        console.log('Get Deleted Product Response Body:', body);
+        const { body } = await this.executeAndLog(productService, query, { id: this.createdProductId }, 'Get Deleted Product');
         this.validateGetDeleted(body);
-    }}
+    }
+}

@@ -1,9 +1,8 @@
 import { faker } from '@faker-js/faker';
 
-const VALID_CATEGORY_IDS: number[] = [];
-for (let i = 1; i <= 100; i++) {
-    VALID_CATEGORY_IDS.push(i);
-}
+const VALID_CATEGORY_IDS: number[] = [30]
+
+
 
 export interface ProductData {
     title: string;
@@ -21,7 +20,7 @@ export interface UpdateProductData {
 
 export function generateProductData(): ProductData {
     return {
-        title: `${faker.commerce.productName()} ${faker.string.alphanumeric(6)}`,
+        title: `${faker.commerce.productName()} ${faker.string.alphanumeric(4)}`,
         price: parseFloat(faker.commerce.price({ min: 1, max: 1000, dec: 0 })),
         description: faker.commerce.productDescription(),
         categoryId: faker.helpers.arrayElement(VALID_CATEGORY_IDS),
@@ -31,7 +30,7 @@ export function generateProductData(): ProductData {
 
 export function generateUpdateProductData(): UpdateProductData {
     return {
-        title: `Updated ${faker.commerce.productName()} ${faker.string.alphanumeric(6)}`,
+        title: `Updated ${faker.commerce.productName()} ${faker.string.alphanumeric(4)}`,
         price: parseFloat(faker.commerce.price({ min: 1, max: 1000, dec: 0 })),
         images: [`https://picsum.photos/seed/${faker.string.alphanumeric(8)}/640/480`],
     };

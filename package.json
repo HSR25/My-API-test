@@ -6,10 +6,16 @@
     "report": "playwright show-report"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.0.1",
     "@faker-js/faker": "^10.3.0",
     "@playwright/test": "^1.58.2",
     "ajv": "^8.17.1",
-    "allure-playwright": "^3.4.5",
-    "typescript": "^5.0.0"
+    "allure-commandline": "^2.37.0",
+    "allure-playwright": "^3.5.0",
+    "eslint": "^10.0.2",
+    "globals": "^17.3.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.56.1"
   }
 }
