@@ -1,14 +1,10 @@
 import { faker } from '@faker-js/faker';
 
-const VALID_CATEGORY_IDS: number[] = [30]
-
-
-
 export interface ProductData {
     title: string;
     price: number;
     description: string;
-    categoryId: number;
+    categoryId: string | number;
     images: string[];
 }
 
@@ -18,12 +14,22 @@ export interface UpdateProductData {
     images: string[];
 }
 
-export function generateProductData(): ProductData {
+export interface CategoryData {
+    name: string;
+    image: string;
+}
+
+export interface UpdateCategoryData {
+    name: string;
+    image: string;
+}
+
+export function generateProductData(categoryId: string | number): ProductData {
     return {
         title: `${faker.commerce.productName()} ${faker.string.alphanumeric(4)}`,
         price: parseFloat(faker.commerce.price({ min: 1, max: 1000, dec: 0 })),
         description: faker.commerce.productDescription(),
-        categoryId: faker.helpers.arrayElement(VALID_CATEGORY_IDS),
+        categoryId: typeof categoryId === 'string' ? parseInt(categoryId) : categoryId,
         images: [`https://picsum.photos/seed/${faker.string.alphanumeric(8)}/640/480`],
     };
 }
@@ -33,5 +39,19 @@ export function generateUpdateProductData(): UpdateProductData {
         title: `Updated ${faker.commerce.productName()} ${faker.string.alphanumeric(4)}`,
         price: parseFloat(faker.commerce.price({ min: 1, max: 1000, dec: 0 })),
         images: [`https://picsum.photos/seed/${faker.string.alphanumeric(8)}/640/480`],
+    };
+}
+
+export function generateCategoryData(): CategoryData {
+    return {
+        name: `${faker.commerce.department()} ${faker.string.alphanumeric(6)}`,
+        image: `https://picsum.photos/seed/${faker.string.alphanumeric(8)}/640/480`,
+    };
+}
+
+export function generateUpdateCategoryData(): UpdateCategoryData {
+    return {
+        name: `Updated ${faker.commerce.department()} ${faker.string.alphanumeric(6)}`,
+        image: `https://picsum.photos/seed/${faker.string.alphanumeric(8)}/640/480`,
     };
 }

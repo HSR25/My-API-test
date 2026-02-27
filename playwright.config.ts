@@ -14,6 +14,7 @@ export default defineConfig({
       outputFolder: 'allure-results',
       detail: true,
       suiteTitle: false
-    }]
+    }],
+    ['html', { outputFolder: 'html-report', open: 'never' }]
   ],
 });

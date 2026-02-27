@@ -1,0 +1,21 @@
+Create Category Response Status: 200
+Create Category Response Body: {
+  data: {
+    addCategory: {
+      id: '60',
+      name: 'Electronics 7vAU54',
+      image: 'https://picsum.photos/seed/QHKYTAL0/640/480'
+    }
+  }
+}
+Created Category ID: 60
+Create Product Response Status: 200
+Create Product Response Body: {
+  errors: [
+    {
+      message: 'Variable "$categoryId" got invalid value "60"; Float cannot represent non numeric value: "60"',
+      locations: [Array],
+      extensions: [Object]
+    }
+  ]
+}

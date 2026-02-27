@@ -1,0 +1,58 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '254',
+      title: 'Small Aluminum Computer Hxpu',
+      price: 860,
+      description: 'New Shoes model with 11 GB RAM, 156 GB storage, and feline features'
+    }
+  }
+}
+Created Product ID: 254
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '254',
+      title: 'Small Aluminum Computer Hxpu',
+      price: 860,
+      description: 'New Shoes model with 11 GB RAM, 156 GB storage, and feline features'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '254',
+      title: 'Updated Ergonomic Metal Table 9IiM',
+      price: 118
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '254',
+      title: 'Updated Ergonomic Metal Table 9IiM',
+      price: 118,
+      description: 'New Shoes model with 11 GB RAM, 156 GB storage, and feline features'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

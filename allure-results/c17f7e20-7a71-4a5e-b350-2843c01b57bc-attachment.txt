@@ -1,0 +1,12 @@
+Create Category Response Status: 200
+Create Category Response Body: {
+  data: {
+    addCategory: {
+      id: '42',
+      name: 'Just for automation testi3ed22',
+      image: 'https://placeimg.com/640/480/any'
+    }
+  }
+}
+Response schema validation passed for category creation
+Created Category ID: 42

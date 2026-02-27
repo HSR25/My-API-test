@@ -1,0 +1,58 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '148',
+      title: 'Awesome Gold Chair osVg',
+      price: 319,
+      description: 'Innovative Keyboard featuring sorrowful technology and Wooden construction'
+    }
+  }
+}
+Created Product ID: 148
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '148',
+      title: 'Awesome Gold Chair osVg',
+      price: 319,
+      description: 'Innovative Keyboard featuring sorrowful technology and Wooden construction'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '148',
+      title: 'Updated Oriental Silk Towels A8I5',
+      price: 110
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '148',
+      title: 'Updated Oriental Silk Towels A8I5',
+      price: 110,
+      description: 'Innovative Keyboard featuring sorrowful technology and Wooden construction'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

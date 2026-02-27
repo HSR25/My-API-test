@@ -1,0 +1,54 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '260',
+      title: 'Soft Bronze Chicken mJnH',
+      price: 764,
+      description: 'Discover the cat-like agility of our Mouse, perfect for monstrous users'
+    }
+  }
+}
+Created Product ID: 260
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '260',
+      title: 'Soft Bronze Chicken mJnH',
+      price: 764,
+      description: 'Discover the cat-like agility of our Mouse, perfect for monstrous users'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: { id: '260', title: 'Updated Generic Silk Chips tNrZ', price: 882 }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '260',
+      title: 'Updated Generic Silk Chips tNrZ',
+      price: 882,
+      description: 'Discover the cat-like agility of our Mouse, perfect for monstrous users'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

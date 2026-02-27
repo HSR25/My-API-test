@@ -1,0 +1,69 @@
+Create Category Response Status: 200
+Create Category Response Body: {
+  data: {
+    addCategory: {
+      id: '66',
+      name: 'Games DRK4RP',
+      image: 'https://picsum.photos/seed/kicQfxX0/640/480'
+    }
+  }
+}
+Created Category ID: 66
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '183',
+      title: 'Frozen Gold Mouse Xuo4',
+      price: 561,
+      description: 'Our tiger-friendly Chicken ensures good-natured comfort for your pets'
+    }
+  }
+}
+Created Product ID: 183
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '183',
+      title: 'Frozen Gold Mouse Xuo4',
+      price: 561,
+      description: 'Our tiger-friendly Chicken ensures good-natured comfort for your pets'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '183',
+      title: 'Updated Handmade Cotton Computer LtP6',
+      price: 504
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '183',
+      title: 'Updated Handmade Cotton Computer LtP6',
+      price: 504,
+      description: 'Our tiger-friendly Chicken ensures good-natured comfort for your pets'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

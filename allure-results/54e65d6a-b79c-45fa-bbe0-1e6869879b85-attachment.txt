@@ -1,0 +1,58 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '304',
+      title: 'Recycled Cotton Fish IZqs',
+      price: 835,
+      description: 'The Implemented mobile functionalities Chicken offers reliable performance and svelte design'
+    }
+  }
+}
+Created Product ID: 304
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '304',
+      title: 'Recycled Cotton Fish IZqs',
+      price: 835,
+      description: 'The Implemented mobile functionalities Chicken offers reliable performance and svelte design'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '304',
+      title: 'Updated Intelligent Rubber Gloves lSrO',
+      price: 69
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '304',
+      title: 'Updated Intelligent Rubber Gloves lSrO',
+      price: 69,
+      description: 'The Implemented mobile functionalities Chicken offers reliable performance and svelte design'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

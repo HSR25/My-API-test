@@ -1,0 +1,69 @@
+Create Category Response Status: 200
+Create Category Response Body: {
+  data: {
+    addCategory: {
+      id: '64',
+      name: 'Clothing fkQ6i6',
+      image: 'https://picsum.photos/seed/iOIVbGIE/640/480'
+    }
+  }
+}
+Created Category ID: 64
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '182',
+      title: 'Luxurious Plastic Soap R5ux',
+      price: 630,
+      description: 'The grey Shoes combines Albania aesthetics with Krypton-based durability'
+    }
+  }
+}
+Created Product ID: 182
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '182',
+      title: 'Luxurious Plastic Soap R5ux',
+      price: 630,
+      description: 'The grey Shoes combines Albania aesthetics with Krypton-based durability'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '182',
+      title: 'Updated Sleek Aluminum Sausages 4Sy4',
+      price: 596
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '182',
+      title: 'Updated Sleek Aluminum Sausages 4Sy4',
+      price: 596,
+      description: 'The grey Shoes combines Albania aesthetics with Krypton-based durability'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

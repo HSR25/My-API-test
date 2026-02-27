@@ -1,0 +1,2 @@
+Delete Category Response Status: 200
+Delete Category Response Body: { data: { deleteCategory: true } }

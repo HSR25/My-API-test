@@ -1,0 +1,54 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '68',
+      title: 'Intelligent Rubber Pants wHqa93',
+      price: 811,
+      description: 'Our spicy-inspired Table brings a taste of luxury to your functional lifestyle'
+    }
+  }
+}
+Created Product ID: 68
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '68',
+      title: 'Intelligent Rubber Pants wHqa93',
+      price: 811,
+      description: 'Our spicy-inspired Table brings a taste of luxury to your functional lifestyle'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: { id: '68', title: 'Updated Tasty Steel Hat 2zVEFE', price: 14 }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '68',
+      title: 'Updated Tasty Steel Hat 2zVEFE',
+      price: 14,
+      description: 'Our spicy-inspired Table brings a taste of luxury to your functional lifestyle'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

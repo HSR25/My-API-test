@@ -1,0 +1,58 @@
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '298',
+      title: 'Luxurious Steel Cheese ZnJi',
+      price: 706,
+      description: 'Our spicy-inspired Computer brings a taste of luxury to your menacing lifestyle'
+    }
+  }
+}
+Created Product ID: 298
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '298',
+      title: 'Luxurious Steel Cheese ZnJi',
+      price: 706,
+      description: 'Our spicy-inspired Computer brings a taste of luxury to your menacing lifestyle'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '298',
+      title: 'Updated Bespoke Metal Gloves acxt',
+      price: 152
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '298',
+      title: 'Updated Bespoke Metal Gloves acxt',
+      price: 152,
+      description: 'Our spicy-inspired Computer brings a taste of luxury to your menacing lifestyle'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}

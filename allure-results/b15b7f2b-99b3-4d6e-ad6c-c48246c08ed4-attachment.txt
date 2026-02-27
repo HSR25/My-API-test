@@ -1,0 +1,10 @@
+Get Category Response Status: 200
+Get Category Response Body: {
+  data: {
+    category: {
+      id: '43',
+      name: 'Just for automation testi3ed22',
+      image: 'https://placeimg.com/640/480/any'
+    }
+  }
+}

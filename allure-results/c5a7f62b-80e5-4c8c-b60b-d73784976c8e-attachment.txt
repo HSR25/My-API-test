@@ -1,0 +1,69 @@
+Create Category Response Status: 200
+Create Category Response Body: {
+  data: {
+    addCategory: {
+      id: '62',
+      name: 'Clothing wphcoB',
+      image: 'https://picsum.photos/seed/YVjfy8KA/640/480'
+    }
+  }
+}
+Created Category ID: 62
+Create Product Response Status: 200
+Create Product Response Body: {
+  data: {
+    addProduct: {
+      id: '179',
+      title: 'Frozen Cotton Car YrLY',
+      price: 409,
+      description: 'Savor the tender essence in our Ball, designed for reasonable culinary adventures'
+    }
+  }
+}
+Created Product ID: 179
+Get Product Response Status: 200
+Get Product Response Body: {
+  data: {
+    product: {
+      id: '179',
+      title: 'Frozen Cotton Car YrLY',
+      price: 409,
+      description: 'Savor the tender essence in our Ball, designed for reasonable culinary adventures'
+    }
+  }
+}
+Update Product Response Status: 200
+Update Product Response Body: {
+  data: {
+    updateProduct: {
+      id: '179',
+      title: 'Updated Luxurious Ceramic Pizza 07nw',
+      price: 627
+    }
+  }
+}
+Get Updated Product Response Status: 200
+Get Updated Product Response Body: {
+  data: {
+    product: {
+      id: '179',
+      title: 'Updated Luxurious Ceramic Pizza 07nw',
+      price: 627,
+      description: 'Savor the tender essence in our Ball, designed for reasonable culinary adventures'
+    }
+  }
+}
+Delete Product Response Status: 200
+Delete Product Response Body: { data: { deleteProduct: true } }
+Get Deleted Product Response Status: 200
+Get Deleted Product Response Body: {
+  errors: [
+    {
+      message: "Cannot destructure property 'url' of 'request' as it is undefined.",
+      locations: [Array],
+      path: [Array],
+      extensions: [Object]
+    }
+  ],
+  data: null
+}
